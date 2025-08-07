@@ -1,0 +1,303 @@
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user. 
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places. 
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less. 
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1 
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers. 
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE 
+Greetings User
+ ---INSTRUCTIONS--- 
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2> 
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+std
+Please enter in the proper syntax 
+ The operators supported are: 
+ + for addition 
+ - for substraction 
+ * for multipication 
+ / for division 
+ ^ for index/raise power(including decimal) 
+ s for second-radical or square-root.  Information: square root is denoted by 's', and enter the same number both sides
+5+3
+8
+ 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user. 
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places. 
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less. 
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1 
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers. 
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE 
+Greetings User
+ ---INSTRUCTIONS--- 
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2> 
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+std
+Please enter in the proper syntax 
+ The operators supported are:
+ + for addition
+ - for substraction
+ * for multipication
+ / for division
+ ^ for index/raise power(including decimal)
+ s for second-radical or square-root.  Information: square root is denoted by 's', and enter the same number both sides
+5-3
+2
+
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+std
+Please enter in the proper syntax 
+ The operators supported are:
+ + for addition
+ - for substraction
+ * for multipication
+ / for division
+ ^ for index/raise power(including decimal)
+ s for second-radical or square-root.  Information: square root is denoted by 's', and enter the same number both sides
+5 / 3
+1.66667
+
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user. 
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places. 
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less. 
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1 
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers. 
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE 
+Greetings User
+ ---INSTRUCTIONS--- 
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2> 
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+std
+Please enter in the proper syntax 
+ The operators supported are: 
+ + for addition 
+ - for substraction 
+ * for multipication 
+ / for division 
+ ^ for index/raise power(including decimal) 
+ s for second-radical or square-root.  Information: square root is denoted by 's', and enter the same number both sides
+2 ^ 10
+1024
+ 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user. 
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places. 
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less. 
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+std
+Please enter in the proper syntax 
+ The operators supported are:
+ + for addition
+ - for substraction
+ * for multipication
+ / for division
+ ^ for index/raise power(including decimal)
+ s for second-radical or square-root.  Information: square root is denoted by 's', and enter the same number both sides
+36 s 36
+6
+
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+scf
+Specify the operator, and enter the number 
+**Legend**
+ln for natural log
+lg for common log
+exp for exponent
+sn for sine
+cs for cosine
+tn for tangent
+asn for arcsine
+acs for arccosine
+atn for arctangent
+dci for decimal index NOTE: Please enter base first and then the index.
+ Specify the operator: ln
+ Enter value numerica:2.718
+1.00002 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+scf
+Specify the operator, and enter the number 
+**Legend**
+ln for natural log
+lg for common log
+exp for exponent
+sn for sine
+cs for cosine
+tn for tangent
+asn for arcsine
+acs for arccosine
+atn for arctangent
+dci for decimal index NOTE: Please enter base first and then the index.
+ Specify the operator:exp
+ Enter value numerica:1
+2.71828 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+scf
+Specify the operator, and enter the number 
+**Legend**
+ln for natural log
+lg for common log
+exp for exponent
+sn for sine
+cs for cosine
+tn for tangent
+asn for arcsine
+acs for arccosine
+atn for arctangent
+dci for decimal index NOTE: Please enter base first and then the index.
+ Specify the operator:sn 
+ Enter value numerica:1.5708
+1 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+scf
+Specify the operator, and enter the number 
+**Legend**
+ln for natural log
+lg for common log
+exp for exponent
+sn for sine
+cs for cosine
+tn for tangent
+asn for arcsine
+acs for arccosine
+atn for arctangent
+dci for decimal index NOTE: Please enter base first and then the index.
+ Specify the operator:acs 
+ Enter value numerica:0.70710678118
+0.786217 
+Thank you!
+PS D:\Programming\C++> cd "d:\Programming\C++\" ; if ($?) { g++ Sci-calC.cpp -o Sci-calC } ; if ($?) { .\Sci-calC }
+Addressing limitatons and precison of the machine 
+ This system uses algorithms combined with McLauren series to compute the request attested by the user.
+ DMAS and power(indices) and square-roots(second radical) in standard calculator is accurate as it includes the direct firmware.
+ Natural, common logaritm and exponent are algorithmized to provide accurate answers till second decimal places.
+ Sines, Cosines and Tangents are made directly from mclauren series in which sines and cosines are accurate to two decimals while tangents are less.
+ Arcs of sines cosines and tangents are least accurate from mclauren, as the series converges slowly near (for eg arcsine) 1
+ Lastly the decimal index is also accurate to two decimal places and uses logarithm and exponent algorithms and at times could give varying answers.
+ THE USER IS ADVICED TO ROUND THE ANSWER OBTAINED TO THE SECOND DECIMAL PLACE
+Greetings User
+ ---INSTRUCTIONS---
+ For the usage of standard Calc functions please use the syntax <num1> <operator> <num2>
+ Using Scientific functions, please enter the operation FIRST followed by the numerica.
+ We appreciate your patience. Fly safe!
+Please chose the mode of Calculation; enter 'std' for standard or 'scf' for scientific.
+scf
+Specify the operator, and enter the number 
+**Legend**
+ln for natural log
+lg for common log
+exp for exponent
+sn for sine
+cs for cosine
+tn for tangent
+asn for arcsine
+acs for arccosine
+atn for arctangent
+dci for decimal index NOTE: Please enter base first and then the index.
+ Specify the operator:dci
+ Enter value numerica:4
+Enter Index
+0.5
+1.99954 
+Thank you!
+PS D:\Programming\C++> 
