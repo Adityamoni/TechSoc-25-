@@ -1,150 +1,205 @@
-# Problem Statement 0: Mathematical Calculator
+TechSOC 2025# 🚀 TechSOC 2025 - Learn to Code Challenge
+Difficulty Languages Progressive
 
-[![Difficulty](https://img.shields.io/badge/Difficulty-Complete%20Beginner%20to%20Intermediate-orange.svg)](#)
-[![Concepts](https://img.shields.io/badge/Concepts-Math%20|%20Algorithms%20|%20Series-blue.svg)](#)
-[![Implementation](https://img.shields.io/badge/Implementation-From%20Scratch-red.svg)](#)
+🎓 Organized by Students at IIT Indore
 
----
+Welcome to Your Coding Journey!
+Ready to transform from a coding beginner to someone who can tackle any club's problem statement? You're in the right place! 🎯 This event is designed by students, for students, to help you build rock-solid programming fundamentals through hands-on problem solving.
 
-## Problem Overview
+What Makes This Special?
+📚 Learn by Doing
+Forget boring theory! Jump straight into exciting challenges that teach you programming concepts naturally:
 
-Welcome to your first coding challenge! 🎉 You'll build a **mathematical calculator** in the terminal, that can perform basic and advanced operations **without using any built-in math libraries**. This means you'll implement logarithms, exponentials, and trigonometric functions from scratch using mathematical algorithms!
+👥 Student-Led Learning
+This event is crafted by fellow students who understand exactly what you need to succeed in competitive programming and club selections.
 
-**Why this challenge?** 
-- Learn fundamental mathematical algorithms
-- Understand how computers actually calculate complex functions
-- Build confidence with series expansions and numerical methods
-- Practice problem decomposition and algorithm design
+📈 Progressive Difficulty
+Start Simple: Basic concepts everyone can grasp
+Build Confidence: Each problem builds on the previous in complexity
+Reach Excellence: Advanced challenges for those who want more
+🎁 Bonus Levels Await
+Complete the main challenges early? We've got exclusive bonus levels that will push your skills even further and keep the excitement going! 🔥
 
----
+Resources at Your Fingertips
+Stuck on a concept? Don't worry! Check out our comprehensive Resources Guide featuring:
 
-## Requirements
+Interactive coding tutorials
+Video courses
+Reference materials for quick lookups
+Websites for those who learn by reading
+Community-recommended learning paths
+Remember: The goal isn't to know everything upfront - it's to learn how to learn!
 
-### **Basic Operations (Level 1)**
-Your calculator must support:
-- ✅ **Addition** (`+`)
-- ✅ **Subtraction** (`-`) 
-- ✅ **Multiplication** (`*`)
-- ✅ **Division** (`/`)
-- ✅ **Power** (`^` or `**`)
-- ✅ **Square Root** (`sqrt`) 
+How to Participate
+Step-by-Step GitHub Setup:
+Step 1: Using GitHub Web Interface
 
-### **Advanced Operations (Level 2)**
-Implement these **without using math libraries**:
-- ✅ **Natural Logarithm** (`ln`) 
-- ✅ **Logarithm base 10** (`log10`)
-- ✅ **Exponential** (`exp`)
-- ✅ **Power with decimal exponents** (`a^b` where b can be decimal)
+Create a GitHub Account
+Click the "Fork" button at the top-right of this repository
+Select your GitHub account as the destination
+Wait for the fork to complete
+Step 2: Using Git Commands
 
-### **Trigonometric Functions (Level 3)**
-- ✅ **Sine** (`sin`) - input in radians
-- ✅ **Cosine** (`cos`) - input in radians  
-- ✅ **Tangent** (`tan`) - input in radians
-- ✅ **Inverse functions** (`asin`, `acos`, `atan`) - bonus points!
+# Clone your forked repository
+git clone https://github.com/YashBhamare123/TechSoC-25.git
 
-**NO GUI IS REQUIRED FOR ANY LEVEL. INPUTS IN THE TERMINAL ARE SUFFICIENT**
----
+# Navigate to the project directory
+cd TechSoC-25
 
-## Test Cases
+# Add the original repository as upstream (for updates)
+git remote add upstream https://github.com/YashBhamare123/TechSoC-25.git
 
-### **Basic Operations:**
-```
-Input: 5 + 3
-Output: 8
+# Verify your remotes
+git remote -v
+Don't worry if you are unable to understand this yet, we have a guide on using GitHub in the resources as well.
 
-Input: 10 / 3
-Output: 3.333333...
+📁 Directory Structure for Submissions:
+Your forked repository should maintain this structure:
 
-Input: 2^10
-Output: 1024
+techsoc-2025/
+├── README.md                          # Main challenge information
+├── RESOURCES.md                       # Learning resources
+├── Problem_Statement_1/               # Problem Statement Directory
+│   ├── README.md                      # Problem description          
+│   ├── your_solution.py/.cpp/.c/.js   # 👈 Your solution here (any language you prefer)            
+│   ├── test_cases/                    # Test files (if any)
+│   └── documentation.md               # 👈 Your approach explanation
 
-Input: sqrt(16)
-Output: 4
-```
+💡 Submission Guidelines:
+What to Include in Each Problem Folder:
 
-### **Advanced Operations:**
-```
-Input: ln(2.718281828)  # approximately e
-Output: ≈ 1.0
+✅ Your working solution in your preferred language
+✅ Documentation.md explaining your approach (optional but recommended)
+📋 Use our Documentation Template as a guide!
+✅ Comments in your code explaining key logic
+✅ Test cases you created (if any)
+Keeping Your Fork Updated:
+# Fetch updates from the original repository
+git fetch upstream
 
-Input: exp(1)
-Output: ≈ 2.718281828
+# Merge updates into your main branch
+git checkout main
+git merge upstream/main
 
-Input: log10(100)
-Output: 2.0
-```
+# Push updates to your fork
+git push origin main
+Submitting Your Work:
+# Add your changes
+git add .
 
-### **Trigonometric Functions:**
-```
-Input: sin(π/2)  # π/2 ≈ 1.5708
-Output: ≈ 1.0
+# Commit with a descriptive message
+git commit -m "Added solution for PS 1"
 
-Input: cos(0)
-Output: 1.0
+# Push to your fork
+git push origin main
+We will float a Google Gorm asking for the GitHub Repository Link after a challenge is over, so make sure that everything is up to date.
 
-Input: tan(π/4)  # π/4 ≈ 0.7854
-Output: ≈ 1.0
-```
+2. Problem Releases
+New problem statements will be released Every 2 Weeks to keep the momentum going:
 
----
+🎁 Bonus Levels: Advanced challenges for early finishers will be released for each Problem Statement.
+3. Submit Your Solutions
+Work in your 🍴 forked repository
+Place solutions in the respective Problem_Statement_X/ folders
+Include both your code and any documentation
+Show your thought process - we love seeing how you approach problems! 🧠
+4. Level Up Your Skills
+Each completed problem statement builds your coding arsenal. By the end, you'll have the confidence and knowledge to tackle problem statements from any core or non-core club. 💯
 
+📋 Evaluation & Progression System
+How Progression Works
+Sequential Unlock System: 📈
 
-## 📚 Learning Objectives
+Complete Problem Statement 1 → Get evaluated → Unlock Problem Statement 2
+Complete Problem Statement 2 → Get evaluated → Unlock Problem Statement 3
+And so on...
+Evaluation Process: 🔍
 
-By completing this challenge, you'll learn:
+Submit your solution in your forked repository
+Our team reviews your submission (code + documentation)
+You receive confirmation via GitHub/email to proceed to the next problem
+Next challenge unlocks and you continue your learning journey!
+✅ What We Evaluate
+Primary Criteria (Most Important):
 
-### **Programming Skills:**
-- Algorithm implementation from mathematical descriptions
-- Handling floating-point precision
-- Error handling and edge case management
-- Code organization and modular design
+Functioning code that solves the problem correctly
+Clear understanding of the concepts involved
+Genuine effort and problem-solving approach
+Bonus Points (Nice to Have):
 
-### **Problem-Solving:**
-- Breaking complex problems into smaller parts
-- Research and implementation of mathematical algorithms
-- Testing and validation strategies
-- Performance vs accuracy trade-offs
+Good documentation explaining your thought process
+Clean, readable code with proper comments
+Additional test cases or edge case handling
+Creative optimizations or alternative approaches
+Our Philosophy
+No Elimination Policy:
 
----
+No fixed number of participants will be "cut" at each level
+Everyone who submits functioning code can proceed
+Even your best attempt with partial solutions is valued
+Learning effort matters more than perfect solutions
+Our Promise:
 
-## 🚀 Getting Started
+If you submit working code → ✅ Automatic progression
+If you submit partial solution with clear effort → ✅ Very Likely progression
+Success Mindset: 🎯
 
-1. **Research the mathematical algorithms** for each function
-2. **Start with basic operations** and test thoroughly
-3. **Implement one advanced function at a time**
-4. **Test each function with known values**
-5. **Document your learning process**
-6. **Add user interface and bonus features**
+"This is about learning and growth, not elimination. So give it your best shot"
 
----
+🎁 About Bonus Levels
+Optional but Valuable:
 
-## ✅ Submission Checklist
+Not required for progression to next PS
+Do increase your chances of smooth progression
+Great for skill building and deeper understanding
+Show your enthusiasm for learning
+🎯 What You'll Achieve
+By completing this challenge, you'll master:
 
-- [ ] **Basic arithmetic operations** working correctly
-- [ ] **Power and square root** implemented from scratch
-- [ ] **At least 2 advanced functions** (ln, exp, sin, cos) implemented
-- [ ] **Test cases** demonstrating functionality
-- [ ] **Documentation** explaining your algorithms and approach
-- [ ] **Clean, commented code** with good structure
-- [ ] **Error handling** for invalid inputs
+⚙️ Core Programming Skills
+Variables, loops, and conditional logic
+Functions and modular programming
+Data structures and algorithms
+Object-oriented programming concepts
+🧠 Problem-Solving Mindset
+Breaking complex problems into manageable pieces
+Debugging and testing strategies
+Code optimization and efficiency
+Handling edge cases and error conditions
+🏁 Competition Readiness
+Algorithmic thinking
+Clean, readable code structure
+Time management in coding challenges
+Confidence to tackle unknown problems
+👨‍💻 For Everyone, At Every Level
+Complete Beginners
+Never written a line of code? Perfect! Start with Level 1 of each PS and watch your skills grow day by day.
 
----
+Some Experience
+Already know the basics? Jump into the Level 2 and Level 3 of each PS and discover new concepts that will expand your programming knowledge.
 
-## 🎯 Evaluation Criteria
+❓ Questions or Stuck?
+Remember, this is a 📚 learning journey, not a test! Don't hesitate to:
 
-### **Primary (Required):**
-- ✅ **Functioning calculator** with basic operations
-- ✅ **Custom implementation** of mathematical functions (no math library usage)
-- ✅ **Correct results** for provided test cases
-- ✅ **Clear code structure** and organization
+Explore the resources we've provided
+Learn from your mistakes - they're the best teachers!
+🎉 Happy Coding!
 
-### **Bonus Points:**
-- 🌟 **Advanced functions** implemented accurately
-- 🌟 **Comprehensive testing** with edge cases
-- 🌟 **User-friendly interface**
-- 🌟 **Performance optimizations**
-- 🌟 **Creative bonus features**
+🤔 Frequently Asked Questions (FAQs)
+❓ I'm a complete beginner with zero coding experience. Can I still participate?
+💻 Which programming language should I use?
+⏰ How much time should I dedicate daily?
+📅 What if I miss a day or start late?
+🆘 I'm stuck on a problem. Where can I get help?
+🏆 Are there any prizes or certificates?
+🤝 Can I collaborate with others?
+👥 Can I submit as a team or with a partner?
+📱 Do I need any special software or tools?
+🎯 How do I know if my solution is correct?
+🚀 I finished early. What's next?
+🎓 Crafted by Students, For Students
+This challenge was created by fellow students at IIT Indore who believe in learning by doing.
 
----
+Made with 💙 by the TechSOC 2025 Team
 
-*Remember: The goal is learning, not perfection. Start simple and build up! 🌱*
+⭐ Star this repo if you find it helpful! ⭐
