@@ -1,0 +1,119 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+std::string keywordcs(std::string ky, std::string str ){
+    int y = 0;
+    int j = 0;
+    std::string final;
+    for (int i = 0; i < str.length(); i++, j++){ 
+        if (j - y == ky.length()){
+            y += ky.length();
+        }
+        int shift = ky.at(j - y) - 'A' + 1;
+            if (str.at(i) >= (int)'a' && str.at(i)<= (int)'z') (int(str.at(i))+ shift > int('z'))? final.append(std::string (1, ((char)((int)str.at(i) - 26 + shift)))): final.append(std::string (1, ((char)((int)str.at(i) + shift)))) ;
+            else if (str.at(i) >= (int)'A' && str.at(i)<= (int)'Z') (int(str.at(i))+ shift > int('Z'))? final.append(std::string (1, ((char)((int)str.at(i) - 26 + shift)))): final.append(std::string (1, ((char)((int)str.at(i) + shift)))) ;
+            else if (str.at(i) == ' ') {
+                j--;
+                final.append(" ");
+            } // To skip gaps for shifts -- If its "Hi I am" The keywords specific role should lie in incrementing H, i, and the next directly to I;
+            else if (str.at(i) >= '0' && str.at(i)<='9') {
+            if (str.at(i)+shift <= '9') final.append(std::string (1, ((char)((int)str.at(i) + shift))));
+            else if (str.at(i)+shift <= '9'+ 10) final.append(std::string (1, ((char)((int)str.at(i) - 10 + shift))));
+            else if (str.at(i)+shift <= '9'+ 20) final.append(std::string (1, ((char)((int)str.at(i) - 20 + shift))));
+            else if (str.at(i)+shift <= '9'+ 26) final.append(std::string (1, ((char)((int)str.at(i) - 30 + shift))));
+           } 
+           else final.append(std::string(1, str.at(i))); 
+    }
+    std::cout << final << std::endl;
+    return final;
+}
+
+int base64dataset(char a){
+    int r;
+    if (a >= 'A' &&  a<='Z') r = (int)a - 'A'; 
+    if (a >= 'a' &&  a<='z') r = (int)a - 'a' + 26;
+    if (a >= '0' &&  a<='9') r = (int)a - '0' + 52;
+    if (a == '+') r = 62;
+    if (a == '/') r = 63;
+    return r;
+}
+
+char base64dataset(int a){
+    char r;
+    if (a <= 25) r = a + 'A';
+    if (a>25 && a < 52) r = a + 'a' - 26;
+    if (a>= 52 && a <= 61) r = a + '0' - 52;
+    if (a == 62) r = '+';
+    if (a == 63) r = '/';
+    return r;
+}
+
+int binarydecode(std::string str){
+    int value;
+    for (int i = 0; i < 8; i++) {
+        value = value * 2 + (str[i] - '0');
+    }
+    return value;
+}
+
+void base_64(std::string str){
+    
+    int num;
+    std::vector<int> necklace;
+    int j = 0;
+    for (int k = 0 ; k < str.length(); k++){ 
+        for (int i = 7; i >= 0; i--, j++) {
+        necklace[j] = (((int)(str.at(k))>> i) & 1) ;
+        }
+    }
+    std::string final;
+    if (necklace.size()%24 == 0){
+        int s = 0 ;
+        for (int k = 0; k < necklace.size(); k++){
+            std::string temp1;
+            for (int y = 0; y < 6; y++, s++){
+                temp1.push_back(necklace[s]);
+            }
+            final.push_back(base64dataset(binarydecode(temp1)));
+        }
+    }
+    else if (necklace.size()%24 == 8){
+        necklace[j+1,j+2,j+3,j+4] = 0;
+        int s = 0 ;
+        for (int k = 0; k < necklace.size(); k++){
+            std::string temp1;
+            for (int y = 0; y < 6; y++, s++){
+                temp1.push_back(necklace[s]);
+            }
+            final.push_back(base64dataset(binarydecode(temp1)));
+        }
+        final.append(1,'=');
+        final.append(1, '=');
+    }
+    else if (necklace.size()%24 == 16){
+        necklace[j+1,j+2] = 0;
+        int s = 0 ;
+        for (int k = 0; k < necklace.size(); k++){
+            std::string temp1;
+            for (int y = 0; y < 6; y++, s++){
+                temp1.push_back(necklace[s]);
+            }
+            final.push_back(base64dataset(binarydecode(temp1)));
+        }
+        final.append(1,'=');
+    }
+    std::cout << final ;
+}
+
+int main()
+{
+    std::cout << "PLEASE ENTER THE String" <<std::endl;
+    std::string str;
+    std::getline (std::cin, str);
+    std::cout << "PLEASE ENTER THE ALPHABETICAL PRESHAREDKEY IN UPPERCASE" <<std::endl;
+    std::cin.ignore();
+    std::string key;
+    std::getline (std::cin, key);
+    base_64("MLAWUA");
+}
