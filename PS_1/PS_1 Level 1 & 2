@@ -1,0 +1,109 @@
+#include<iostream>
+#include<string>
+#include<vector>
+
+void caesar(int shift , std::string str) {
+    int l = str.length();
+    int i; 
+    std::string final ;
+    for (i = 0 ; i<l ; i++) {
+           if (str.at(i) >= (int)'a' && str.at(i)<= (int)'z') (int(str.at(i))+ shift > int('z'))? final.append(std::string (1, ((char)((int)str.at(i) - 26 + shift)))): final.append(std::string (1, ((char)((int)str.at(i) + shift)))) ;
+           else if (str.at(i) >= (int)'A' && str.at(i)<= (int)'Z') (int(str.at(i))+ shift > int('Z'))? final.append(std::string (1, ((char)((int)str.at(i) - 26 + shift)))): final.append(std::string (1, ((char)((int)str.at(i) + shift)))) ;
+           else if (str.at(i) == ' ') final.append(" ");
+           else if (str.at(i) >= '0' && str.at(i)<='9') {
+            if (str.at(i)+shift <= '9') final.append(std::string (1, ((char)((int)str.at(i) + shift))));
+            else if (str.at(i)+shift <= '9'+ 10) final.append(std::string (1, ((char)((int)str.at(i) - 10 + shift))));
+            else if (str.at(i)+shift <= '9'+ 20) final.append(std::string (1, ((char)((int)str.at(i) - 20 + shift))));
+            else if (str.at(i)+shift <= '9'+ 26) final.append(std::string (1, ((char)((int)str.at(i) - 30 + shift))));
+           }
+           else final.append(std::string(1, str.at(i)));   
+        }
+    std::cout << final ;   
+}     
+
+void brutus(int shift , std::string str) {
+    int l = str.length();
+    int i;
+    std::string final ;
+    for (i = 0 ; i<l ; i++) {
+           if (str.at(i) >= (int)'a' && str.at(i)<= (int)'z') (int(str.at(i))- shift < int('a'))? final.append(std::string (1, ((char)((int)str.at(i) + 26 - shift)))): final.append(std::string (1, ((char)((int)str.at(i) - shift)))) ;
+           else if (str.at(i) >= (int)'A' && str.at(i)<= (int)'Z') (int(str.at(i))- shift < int('A'))? final.append(std::string (1, ((char)((int)str.at(i) + 26 - shift)))): final.append(std::string (1, ((char)((int)str.at(i) - shift)))) ;
+           else if (str.at(i) == ' ') final.append(" ");
+           else if (str.at(i) >= '0' && str.at(i)<='9') {
+            if (str.at(i)-shift >= '0') final.append(std::string (1, ((char)((int)str.at(i) - shift))));
+            else if (str.at(i)+shift >= '0'- 10) final.append(std::string (1, ((char)((int)str.at(i) + 10 - shift))));
+            else if (str.at(i)+shift >= '0'- 20) final.append(std::string (1, ((char)((int)str.at(i) + 20 - shift))));
+            else if (str.at(i)+shift >= '0'- 26) final.append(std::string (1, ((char)((int)str.at(i) + 30 - shift))));
+           }
+           else final.append(std::string(1, str.at(i)));   
+        }
+    std::cout << final << std::endl;  
+} 
+
+void maximus(std::vector<int> v, std::string str){
+    int kairos = 0;
+    for (int i = 0; i< 26; i++) {
+        if(v[i] > kairos){
+            kairos = v[i];
+        }
+    }
+    for (int i = 0; i< 26; i++) {
+        if(v[i] == kairos){ 
+            int c =  (i<5)? 26+(i+1-5) : i+1 -5 ;
+            std::cout << "Possible Shift Value: "  << c << std::endl ; 
+            brutus(c, str);
+        } 
+    }
+}
+
+int main()
+{
+    std::cout << "Enter the string"<< std::endl;
+    std::string str ;
+    std::getline(std::cin, str);
+    std::cout << "To decode enter \"DECODE\",to encode enter \"ENCODE\" or to decipher enter \"IMITATION\". " << std::endl ;
+    std::string choice;
+    std::getline(std::cin, choice);
+    if (choice == "ENCODE"){
+        std::cout << "Please input the Caesar shift value between 0 to 26" << std::endl;
+        int shift;
+        std::cin >> shift ;
+         if (shift > 26 && shift < 0) {
+             std::cout<< "Invalid" ;
+             return 0;
+            }
+        caesar(shift, str);
+        return 0;
+        }
+    else if (choice == "DECODE"){
+        std::cout << "Please input caesar decrypt value between 0 to 26" << std::endl ;
+        int shift;
+        std::cin >> shift;
+        if (shift > 26 && shift < 0){
+            std::cout << "Invalid";
+            return 0;
+        }
+        brutus(shift, str);
+        return 0;
+    }    
+    else if (choice == "IMITATION") {
+//Please enter the encrypted code, For higher accuracy, Please include a long sentence Enter the code:-
+    std::vector<int> freq; //frequency
+    for (int i = 'a' ; i <= 'z' ; i++){
+        freq.push_back(0);
+    }
+    for (int i = 0; i < str.length(); i++) 
+    {
+        for (int j = 'a'; j <= 'z'; j++){
+            if (str[i]== (char)j || str[i]== (char)(j+ ('A' - 'a')) )
+            {
+                freq[j - 'a']+= 1;
+                break;
+            }
+        }
+    }
+    maximus(freq , str);
+    }
+    else std::cout<< "The machine does not recognise your input" ;
+    return 0 ;
+}
