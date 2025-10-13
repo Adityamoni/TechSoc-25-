@@ -1,0 +1,106 @@
+#include <iostream>
+#include <string>
+
+struct Move{
+        std::string move;
+        int dmg;
+    };
+class pokemon {
+    struct about{
+    std::string name;
+    int health;
+    int attack;
+    int defence;
+    int speed;
+    Move arr[4];
+    };
+    public:
+    about pokie;
+    int HP = pokie.health;
+    public:
+    pokemon (std::string n, int hp, int att, int def, int spd, Move arc[4]): 
+    pokie{n, hp, att, def, spd, {arc[0], arc[1], arc[2], arc[3]} } {};
+    void getstats(){
+        std::cout << pokie.name << " -"
+                  << " HP: " << HP << "/" << pokie.health << ", Attack: "<< pokie.attack << ", Defence: "<< pokie.defence
+                  << ", Speed: " << pokie.speed << std::endl;
+        std::cout << "Moves: " << pokie.arr[0].move << " : "<<pokie.arr[0].dmg<<" , "
+                               << pokie.arr[1].move << " : "<<pokie.arr[1].dmg<<" , "
+                               << pokie.arr[2].move << " : "<<pokie.arr[2].dmg<<" , "
+                               << pokie.arr[3].move << " : "<<pokie.arr[3].dmg<<" , " << std::endl;
+    }
+    void takedmg(int val){
+        HP -= val;
+        if (HP<0) HP = 0;
+        std::cout<< pokie.name<< " has taken "<< val<< " damage!"<<std::endl;
+        std::cout<< "Current HP: "<<HP<<"/"<<pokie.health<<std::endl;
+    }
+    bool is_fainted(){
+        if (HP == 0){
+            std::cout<< pokie.name << " has fainted!" << std::endl;
+            return true;
+        }
+        return false;
+    }
+};
+
+void duel(pokemon* p, pokemon* q){
+    std::cout << "BEGIN" << std::endl;
+    p->getstats();
+    q->getstats();
+    std::cout<< "Pick a move by indexing its value from 0-3 "<<std::endl;
+    std::cout<< "Pokemon " << p->pokie.name << " starts!" << std::endl;
+    int indicator = 0;
+    do{
+        //about p
+        if(indicator%2==0){
+            std::cout<<"\n"<<p->pokie.name<<std::endl;
+            int m;
+            while(1){
+                std::cin>>m;
+                if(m>=0 && m<4) break;
+            };
+            q->takedmg(p->pokie.arr[m].dmg);
+            if(q->is_fainted()){
+                std::cout<<p->pokie.name<< " has won!"<< std::endl;
+            }
+        }
+        else{
+            //about q
+            std::cout<<"\n"<<q->pokie.name<<std::endl;
+            int m;
+            while(1){
+                std::cin>>m;
+                if(m>=0 && m<4) break;
+            };
+            p->takedmg(q->pokie.arr[m].dmg);
+            if(p->is_fainted()){
+                std::cout<<q->pokie.name<< " has won!"<< std::endl;
+            }  
+        }
+        indicator++;
+    }while(!(p->is_fainted() || q->is_fainted()));
+}
+
+int main(){
+    Move mv1[4]  {{"Thunder Shock", 40}, {"Quick Attack", 30}, {"Agility", 0}, {"Thunder", 70}};
+    pokemon pikachu { "Pikachu" , 100, 55, 40, 90, mv1};
+    Move mv2[4] { {"Ember", 35}, {"Scratch", 25}, {"Growl", 0},{"Flamethrower", 60}};
+    pokemon charmander {"Charmander", 90, 52, 43, 65,  mv2};
+    Move mv3[4] = {{"Splash", 0}, {"Tackle", 20}, {"Flail", 15}, {"Bounce", 25}};
+    pokemon magikarp {"Magikarp", 80, 10, 55, 80, mv3};
+    std::cout << "Choose SIDE A \n 1: Pikachu\n 2: Charmander\n 3: Magikarp"<<std::endl;
+    int a,b;
+    std::cin>>a;
+    std::cout << "Choose SIDE B \n 1: Pikachu\n 2: Charmander\n 3: Magikarp"<<std::endl;
+    std::cin>>b;
+    pokemon *p, *q;
+    if (a == 1) p = &pikachu;
+    else if (a == 2) p = &charmander;
+    else if (a==3) p = &magikarp;
+    if(b == 1) q = &pikachu;
+    else if(b ==2) q = &charmander;
+    else if(b == 3) q = &magikarp;
+    duel(p, q);
+    return 0;
+}
